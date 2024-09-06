@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HFashion | Ecommerce Tailwind CSS HTML Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="flex justify-between py-8 w-3/4 mx-auto border-b">
+        <div class="flex items-center">
+            <span class="material-symbols-outlined text-sm">phone</span>
+            <span>+8801912022598</span>
+        </div>
+        <div>
+            <h1 class="text-3xl">HFashion</h1>
+        </div>
+        <div class="flex items-center gap-2">
+            <div>
+                <a class="flex items-center" href="#"><span class="material-symbols-outlined">shopping_cart</span>
+                    Cart</a>
+            </div>
+            <div class="flex items-center">
+                <span class="material-symbols-outlined">search</span> <span>Search</span>
+            </div>
+            <div class="flex items-center">
+                <span class="material-symbols-outlined">globe</span>
+                <select name="language" id="">
+                    <option value="bn">BN</option>
+                    <option value="en" selected>EN</option>
+                    <option value="ru">RU</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Nav Start -->
+    <nav class="flex justify-center my-6">
+        <ul class="flex gap-8">
+            <li>
+                <a href="#" class="uppercase text-sm">Home</a>
+            </li>
+            <li class="flex items-center relative group">
+                <a href="#" class="uppercase text-sm">About</a>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                <div class="absolute top-6 hidden group-hover:block bg-gray-200 p-3">
+                    <ul>
+                        <li class="whitespace-nowrap"><a href="#" class="uppercase text-sm">About 1</a></li>
+                        <li class="whitespace-nowrap"><a href="#" class="uppercase text-sm">About 2</a></li>
+                        <li class="whitespace-nowrap"><a href="#" class="uppercase text-sm">About 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="flex items-center relative group">
+                <a href="#" class="uppercase text-sm">Shop</a>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                <div class="absolute top-6 hidden group-hover:block bg-gray-200 p-3 ">
+                    <ul>
+                        <li class="whitespace-nowrap"><a href="#" class="uppercase text-sm">Shop 1</a></li>
+                        <li class="whitespace-nowrap"><a href="#" class="uppercase text-sm">Shop 2</a></li>
+                        <li class="whitespace-nowrap"><a href="#" class="uppercase text-sm">Shop 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="flex items-center relative group">
+                <a href="#" class="uppercase text-sm">Blog</a>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                <div class="absolute top-6 hidden group-hover:block bg-gray-200 p-3 ">
+                    <ul>
+                        <li class="whitespace-nowrap"><a href="#" class="uppercase text-sm">Blog 1</a></li>
+                        <li class="whitespace-nowrap"><a href="#" class="uppercase text-sm">Blog 2</a></li>
+                        <li class="whitespace-nowrap"><a href="#" class="uppercase text-sm">Blog 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="whitespace-nowrap"><a href="#" class="uppercase text-sm">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Nav End -->
+    <!-- Hero Section Sart -->
+    <section class="w-3/4 mx-auto one-time">
+        <div class="slick">
+            <div class="w-full" style="background-image: url('./assets/images/hero-slider/hero-1.jpg'); background-size: cover; height: 800px;">image one</div>
+            <div class="w-full" style="background-image: url('./assets/images/hero-slider/hero-2.jpeg'); background-size: cover; height: 800px">image two</div>
+            <div class="w-full" style="background-image: url('./assets/images/hero-slider/hero-3.jpeg'); background-size: cover; height: 800px">image three</div>
+            <div class="w-full" style="background-image: url('./assets/images/hero-slider/hero-4.jpeg'); background-size: cover; height: 800px" onclick="alert('hello');">image four</div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- product category section start -->
+    <section class="py-12">
+        <div class="w-3/4 mx-auto">
+            <div class="py-5">
+                <h1 class="text-2xl text-center">Product Category</h1>
+            </div>
+            <div class="grid grid-cols-2">
+                <div class="">
+                    <div class="relative mb-4">
+                        <img class="" style="height: 400px;" src="./assets/images/products/product-1.jpg" alt="">
+                        <div class="absolute top-5 left-5 p-3 bg-gray-200 rounded">
+                            <h3 class="uppercase">Watch</h3>
+                            <p>High quality watches for sale</p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img class="" style="height: 400px;" src="./assets/images/products/product-1.jpg" alt="">
+                        <div class="absolute top-5 left-5 p-3 bg-gray-200 rounded">
+                            <h3 class="uppercase">Watch</h3>
+                            <p>High quality watches for sale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative h-full">
+                    <img class="h-full"src="./assets/images/products/product-1.jpg" alt="">
+                    <div class="absolute top-5 left-5 p-3 bg-gray-200 rounded">
+                        <h3 class="uppercase">Watch</h3>
+                        <p>High quality watches for sale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product category section end -->
+    <!-- newsletter section start -->
+    <section class="bg-gray-200">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-md sm:text-center">
+                <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Sign up for our newsletter</h2>
+                <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
+                <form action="#">
+                    <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                        <div class="relative w-full">
+                            <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                </svg>
+                            </div>
+                            <input class="block p-3 pl-10 w-full text-sm text-gray-900 rounded-lg border border-gray-900 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter your email" type="email" id="email" required="">
+                        </div>
+                        <div>
+                            <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-gray-700 border-gray-900 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- newsletter section end -->
+    <!-- Instragram Section start -->
+    <section>
+		<div class="flex justify-center items-center py-20">
+			<span class="uppercase">View Us on Instagram</span>
+		</div>
+    </section>
+    <!-- Footer Start -->
+    <footer class="flex justify-between py-8 mx-auto border-t bg-gray-200">
+        <div class="w-3/4 mx-auto">
+            <div class="flex justify-center py-2">
+                <ul class="flex gap-8">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="flex justify-center py-2">
+                <ul class="flex gap-8">
+                    <li><a href="#" class="uppercase text-sm">Contact</a></li>
+                    <li><a href="#" class="uppercase text-sm">Shop</a></li>
+                    <li><a href="#" class="uppercase text-sm">Pricing</a></li>
+                    <li><a href="#" class="uppercase text-sm">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="flex justify-around">
+                <p>Copyright ©<span class="present-year"></span> HFashion || All Rights Reserved</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"></script>
+    <script src="./assets/slick/slick.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        $('.slick').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+    </script>
+</body>
+
+</html>
